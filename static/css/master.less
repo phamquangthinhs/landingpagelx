@@ -5,248 +5,376 @@
     text-decoration: none;
     list-style: none;
 }
+
 @font-face {
-	font-family: avo;
-	src: url(../fonts/Avo.ttf);
+    font-family: avo;
+    src: url(../fonts/Avo.ttf);
 }
+
 @font-face {
-	font-family: avob;
-	src: url(../fonts/AvoBold.ttf);
+    font-family: avob;
+    src: url(../fonts/AvoBold.ttf);
 }
+
 @den : #1b1617;
 @vang : #fbd62a;
 @trang : #fff;
 
 .fonta(@px) {
-	font-family: avo;
-	font-size: @px;
+    font-family: avo;
+    font-size: @px;
 }
+
 .fontab(@px) {
-	font-family: avob;
-	font-size: @px;
+    font-family: avob;
+    font-size: @px;
 }
+
 .menux {
-	position: fixed;
-	width: 100%;
-	z-index: 2;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
+
 .lx {
-	background-color: @den ;
-	padding: 0;
-	.fa1 {
-		img {
-			width: 90%;
-			padding: 16px 0 0px;
-		}
-	}
-	.fa2 {
-		color: @trang;
-		ul {
-			display: inline-flex;
-			li {
-				.fonta(14px);
-			    margin-left: 30px;
-			    text-transform: uppercase;
-			    padding: 40px 0 0;
-			    a {
-			    	color: @trang;
-			    	&:hover {
-			    		text-decoration: none;
-			    		cursor: pointer;
-			    		color: @vang;
-			    	}
-			    }
-			}
-		}
-	}
+    background-color: @den ;
+    padding: 0;
+    .fa1 {
+        img {
+            width: 85%;
+            padding: 16px 0 0px;
+        }
+    }
+    .fa2 {
+        color: @trang;
+        ul {
+            display: inline-flex;
+            li {
+                .fonta(14px);
+                margin-left: 30px;
+                text-transform: uppercase;
+                padding: 40px 0 0;
+                a {
+                    color: @trang;
+                    &:hover {
+                        text-decoration: none;
+                        cursor: pointer;
+                        color: @vang;
+                    }
+                }
+            }
+        }
+    }
 }
+
 .lx1 {
-	background-color: @vang;
-	height: 3px;
-	width: 100%;
+    background-color: @vang;
+    height: 3px;
+    width: 100%;
 }
 
 // Start body one
 .lx2 {
-	.fa1 {
-		background: url(../img/bg.jpg);
-		background-attachment: fixed;
-		height: 100%;
-		.fa3 {
-			background-color: rgba(27, 22, 23, 0.5);
-			height: 100%;
-			width: 100%;
-			.fa4 {
-				.fonta(16px);
-				color: @trang;
-				text-transform: uppercase;
-				margin: 0;
-			}
-			.fa5 {
-				.fontab(34px);
-				color: @trang;
-				text-transform: uppercase;
-				margin: 0 0 10px;
-			}
-			.fa6 {
-				padding: 35px 0 40px; 
-			}
-			.fa7 {
-				margin-left: -22px;
-			}
-			.fa8 {
-				width: 100%;
-				height: 50px;
-				background-color: @vang;
-				margin-top: 10px;
-				padding-top: 10px;
-					a {
-						color: @den;
-						.fonta(16px);
-						text-transform: uppercase;
-						
-						&:hover {
-							text-decoration: none;
-							cursor: pointer;
-						}
-						&:after {
-							content: '';
-							width: 0;
-							height: 0;
-							border-top: 8px solid transparent;
-							border-left: 15px solid @den;
-							border-bottom: 8px solid transparent;
-							display: inline-block;
-							margin-left: 10px;
-							transform: translateY(2px);
+    .fa1 {
+        background: url(../img/bg.jpg);
+        background-attachment: fixed;
+        height: 100%;
+        .fa3 {
+            background-color: rgba(27, 22, 23, 0.5);
+            height: 100%;
+            width: 100%;
+            .fa4 {
+                .fonta(16px);
+                color: @trang;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            .fa5 {
+                .fontab(34px);
+                color: @trang;
+                text-transform: uppercase;
+                margin: 0 0 10px;
+            }
+            .fa6 {
+                padding: 35px 0 40px;
+            }
+            .fa7 {
+                margin-left: -22px;
+            }
+            .fa8 {
+                width: 100%;
+                height: 50px;
+                background-color: @vang;
+                margin-top: 10px;
+                padding-top: 10px;
+                a {
+                    color: @den;
+                    .fonta(16px);
+                    text-transform: uppercase;
+
+                    &:hover {
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    &:after {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: 8px solid transparent;
+                        border-left: 15px solid @den;
+                        border-bottom: 8px solid transparent;
+                        display: inline-block;
+                        margin-left: 10px;
+                        transform: translateY(2px);
 
 
-						}
-					}
-				
-			}
-			.fa9 {
-				padding-top: 50px;
-			}
-		}
-		}
-	// Start body Two
-	.fa2 {
-		background: url(../img/bg1.jpg);
-		background-attachment: fixed;
-		height: 100%;
-		.fa10 {
-			background-color: rgba(251, 214, 42, 0.7);
-			height: 100%;
-			width: 100%;
-		}
-		.fa11 {
-			padding-top: 120px;
-			margin-bottom: 50px;
-			p {
-				color: @den;
-				.fontab(34px);
-				text-transform: uppercase;
-			}
+                    }
+                }
 
-		}
-		.fa13 {
-			height: 260px;
-			width: 100%;
-			img {
-				height: 100%;
-				overflow: hidden;
-			}
-		}
-		.fa14 {
-			height: 60px;
-			background-color: @den;
-			width: 100%;
-			p {
-				&:nth-child(1) {
-					.fonta(16px);
-					color: @trang;
-					text-transform: uppercase;
-					margin-bottom: 0;
-					padding-top: 7px;
-				}
-				&:nth-child(2) {
-					.fonta(14px);
-					color: @trang;
-				}
-			}
-		}
-		.fa15 {
-			width: 100%;
-			display: inline-table;
-		}
-		.fa16 {
-			float: left;
-		}
-	}
+            }
+            .fa9 {
+                padding-top: 50px;
+            }
+        }
+    } // Start body Two
+    .fa2 {
+        background: url(../img/bg1.jpg);
+        background-attachment: fixed;
+        height: 100%;
+        .fa10 {
+            background-color: rgba(251, 214, 42, 0.7);
+            height: 100%;
+            width: 100%;
+        }
+        .fa11 {
+            padding-top: 120px;
+            margin-bottom: 50px;
+            p {
+                color: @den;
+                .fontab(34px);
+                text-transform: uppercase;
+            }
 
-	// Start body three
-	.fa17 {
-		background: url(../img/bg2.jpg);
-		background-attachment: fixed;
-		height: 100%;
-		.fa18 {
-			background-color: rgba(27, 22, 23, 0.6);
-			height: 100%;
-			width: 100%;
-		}
-		.fa19 {
-			padding-top: 130px;
-			margin-bottom: 40px;
-			p {
-				color: @trang;
-				.fontab(34px);
-				text-transform: uppercase;
-			}
-		}
-		.fa20 {
-			width: 100%;
-			height: 360px;
-			background-color: @vang;
-		}
-		.fa21 {
-			width: 100%;
-			background-color: #f3f3f3;
-			height: 360px;
-			overflow-y: scroll;
-			overflow-x: hidden;
-		}
-		.fa22 {
-			width: 100%;
-			height: 130px;
-			background-color: @vang;
-		}
-		.fa23 {
-			padding-top: 30px;
-			p {
-				margin-bottom: 0;
-				&:nth-child(1) {
-					.fontab(16px);
-					color: @den;
-					text-transform: uppercase;
-				}
-				&:nth-child(2) {
-					.fonta(14px);
-					color: @den;
-				}
-			}
-		}
-		.fa24 {
-			&:nth-child(1) {
-				margin-top: 0;
-			}
-			&:nth-child(n+2) {
-				margin-top: 30px;
-			}
-		}
-		// Start Four Page
+        }
+        .fa13 {
+            height: 260px;
+            width: 100%;
+            img {
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+        .fa14 {
+            height: 60px;
+            background-color: @den;
+            width: 100%;
+            p {
+                &:nth-child(1) {
+                    .fonta(16px);
+                    color: @trang;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    padding-top: 7px;
+                }
+                &:nth-child(2) {
+                    .fonta(14px);
+                    color: @trang;
+                }
+            }
+        }
+        .fa15 {
+            width: 100%;
+            display: inline-table;
+        }
+        .fa16 {
+            float: left;
+        }
+    } // Start body three
+    .fa17 {
+        background: url(../img/bg2.jpg);
+        background-attachment: fixed;
+        height: 100%;
+        .fa18 {
+            background-color: rgba(27, 22, 23, 0.6);
+            height: 100%;
+            width: 100%;
+        }
+        .fa19 {
+            padding-top: 130px;
+            margin-bottom: 40px;
+            p {
+                color: @trang;
+                .fontab(34px);
+                text-transform: uppercase;
+            }
+        }
+        .fa20 {
+            width: 100%;
+            height: 360px;
+            background-color: @vang;
+        }
+        .fa21 {
+            width: 100%;
+            background-color: #f3f3f3;
+            height: 360px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .fa22 {
+            width: 100%;
+            height: 130px;
+            background-color: @vang;
+        }
+        .fa23 {
+            padding-top: 30px;
+            p {
+                margin-bottom: 0;
+                &:nth-child(1) {
+                    .fontab(16px);
+                    color: @den;
+                    text-transform: uppercase;
+                }
+                &:nth-child(2) {
+                    .fonta(14px);
+                    color: @den;
+                }
+            }
+        }
+        .fa24 {
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            &:nth-child(n+2) {
+                margin-top: 30px;
+            }
+        }
+    } // Start Four Page
+    .fa25 {
+        background: url(../img/bg3.jpg);
+        background-attachment: fixed;
+        height: 100%;
+        .fa26 {
+            background-color: rgba(251, 214, 42, 0.7);
+            height: 100%;
+            width: 100%;
+            .fa27 {
+                padding-top: 220px;
+                .fa28 {
+                    width: 100%;
+                    background-color: @trang;
+                    padding: 30px 0 30px 42px;
+                    margin-top: 15px;
+                    p {
+                        margin-bottom: 0;
+                        margin: 0;
+                        &:nth-child(n) {
+                            .fonta(23px);
+                            text-transform: uppercase;
 
-		
 
-	}
-}
+                        }
+                        &:nth-child(2n) {
+                            .fonta(120px);
+                            text-transform: uppercase;
+                            line-height: 1;
+                            margin: 0 0 0 -5px;
+                            padding-bottom: 22px;
+                        }
+                    }
+                }
+                .fa29 {
+                    p {
+                        position: relative;
+                        &:nth-child(1) {
+                            .fonta(24px);
+                            text-transform: uppercase;
+                            margin-bottom: 0;
+                            margin: 0;
+                        }
+                        &:nth-child(2) {
+                            .fontab(29px);
+                            text-transform: uppercase;
+                            margin-bottom: 0;
+                            margin: 0;
+                        }
+                        &:nth-child(3) {
+                            width: 100%;
+                            height: 3px;
+                            background-color: @trang;
+                            margin-top: 20px;
+                        }
+                        &:nth-child(4),
+                        &:nth-child(5) {
+                            .fonta(24px);
+                            margin-top: 15px;
+                            padding-left: 45px;
+                        }
+                        span {
+                            position: absolute;
+                            top: 6px;
+                            left: 0px;
+                        }
+                    }
+                }
+                .fa30 {
+                    width: 100%;
+                    height: 50px;
+                    background-color: @trang;
+                    margin-top: 10px;
+                    padding-top: 10px;
+                    a {
+                        color: @den;
+                        .fonta(16px);
+                        text-transform: uppercase;
+
+                        &:hover {
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        &:after {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-top: 8px solid transparent;
+                            border-left: 15px solid @den;
+                            border-bottom: 8px solid transparent;
+                            display: inline-block;
+                            margin-left: 10px;
+                            transform: translateY(2px);
+
+
+                        }
+
+                    }
+                    }
+                    }
+                }
+
+            }
+
+
+
+
+        }
+
+        .icon {
+            /* Customizes all icons at once */
+            display: inline-block;
+        }
+        /*Time icon by Icons8 */
+        .icons8-Time {
+            /* Customizes Time icon */
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIwMCAxNTQwIiBmaWxsPSIjMWIxNjE3IiA+PHBhdGggZD0iTTYwMCAxMjNxMTE3IDAgMjI0IDQ1LjV0MTg0LjUgMTIzIDEyMyAxODQuNSA0NS41IDIyNC00NS41IDIyNC0xMjMgMTg0LjUtMTg0LjUgMTIzLTIyNCA0NS41LTIyNC00NS41LTE4NC41LTEyM1Q2OC41IDkyNCAyMyA3MDB0NDUuNS0yMjQgMTIzLTE4NC41IDE4NC41LTEyM1Q2MDAgMTIzem0wIDE1MHEtMTE2IDAtMjE0LjUgNTdUMjMwIDQ4NS41IDE3MyA3MDB0NTcgMjE0LjVUMzg1LjUgMTA3MHQyMTQuNSA1NyAyMTQuNS01N1Q5NzAgOTE0LjV0NTctMjE0LjUtNTctMjE0LjVUODE0LjUgMzMwIDYwMCAyNzN6bS03NSAxMjdoNTBxMTAgMCAxNy41IDcuNVQ2MDAgNDI1djI3NWgxNzVxMTAgMCAxNy41IDcuNVQ4MDAgNzI1djUwcTAgMTAtNy41IDE3LjVUNzc1IDgwMEg1MjVxLTEwIDAtMTcuNS03LjVUNTAwIDc3NVY0MjVxMC0xMCA3LjUtMTcuNVQ1MjUgNDAweiI+PC9wYXRoPjwvc3ZnPg==') 50% 50% no-repeat;
+            background-size: 88%;
+            width: 30px;
+            height: 30px;
+        }
+
+        /*Gift icon by Icons8 */
+        .icons8-Gift {
+            /* Customizes Gift icon */
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIwMCAxNTQwIiBmaWxsPSIjMWIxNjE3IiA+PHBhdGggZD0iTTI2MCAxMDBxOSAwIDE5IDJ0MTUgNGw1IDJxMjIgMTAgNDQgMjNsMTk2IDExOHEyMSAxMyAzNiAyNCAyOSAyMSAzNyAxMiAxMS0xMyA0OS0zNWwxOTYtMTE4cTIyLTEzIDQ1LTIzIDE3LTcgMzgtNyAyMyAwIDQ3IDE2LjV0MzcgMzMuNWwxMyAxNnExNCAyMSAxOCA0NWwyNSAxMjMgOCA0NHExIDkgOC41IDE0LjV0MTcuNSA1LjVoNjFxMTAgMCAxNy41IDcuNXQ3LjUgMTcuNXY1MHEwIDEwLTcuNSAxNy41VDExNzUgNTAwaC01MHEtMTAgMC0xNy41IDcuNVQxMTAwIDUyNXYxNzVINzAwVjQwMEg1MDB2MzAwSDEwMFY1MjVxMC0xMC03LjUtMTcuNVQ3NSA1MDBIMjVxLTEwIDAtMTcuNS03LjVUMCA0NzV2LTUwcTAtMTAgNy41LTE3LjVUMjUgNDAwaDYxcTExIDAgMTgtM3Q3LThxMC00IDktNTJsMjUtMTI4cTUtMjUgMTktNDUgMi0zIDUtN3QxMy41LTE1IDIxLjUtMTkuNSAyNi41LTE1LjUgMjkuNS03em02NTUgMTIxTDc0OSAzODNxLTcgNy01IDEydDEyIDVoMjE5cTEwIDAgMTUtN3QyLTE3bC01MS0xNDlxLTMtMTAtMTEtMTJ0LTE1IDZ6TTQ2MyAzODNMMjg2IDIyNnEtOC03LTE2LTV0LTExIDEybC01MSAxNDNxLTMgMTAgMiAxN3QxNSA3aDIzMXExMSAwIDEyLjUtNXQtNS41LTEyem0zNyA5MTdIMTI1cS0xMCAwLTE3LjUtNy41VDEwMCAxMjc1VjkwMGg0MDB2NDAwem02MDAtNDAwdjM3NXEwIDEwLTcuNSAxNy41dC0xNy41IDcuNUg3MDBWOTAwaDQwMHoiPjwvcGF0aD48L3N2Zz4=') 50% 50% no-repeat;
+            background-size: 88%;
+            width: 30px;
+            height: 30px;
+        }
