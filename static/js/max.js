@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 
 		menu: '#menu',
-		anchors:['firstPage', 'secondPage', 'thirdPage','fourPage'],
+		anchors:['firstPage', 'secondPage', 'thirdPage','fourPage','fivePage'],
 		
 
 		// Scrolling Edition
