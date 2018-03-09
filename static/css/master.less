@@ -30,6 +30,151 @@
     font-size: @px;
 }
 
+//css mobile
+@media (max-width:575px) and (min-width:480px) {}
+
+//css sm
+@media (max-width:767px) and (min-width:576px) {
+    body {
+
+        .lx2 .fa2 .fa11 {
+            padding-top: 130px;
+            margin-bottom: 10px;
+            p {
+                font-size: 24px;
+            }
+        }
+        .lx2 .fa1 .fa3 {
+            .fa4,
+            .fa5 {
+                text-align: center!important;
+            }
+            .fa6 {
+                padding: 73px 0 18px;
+                width: 104%;
+
+            }
+            .fa8 {
+                width: 80%;
+                margin: auto;
+            }
+        }
+        .lx .fa2 ul li {
+            padding: 20px 0 0;
+        }
+    }
+}
+
+//css md
+@media (max-width:991px) and (min-width:768px) {
+    body {
+        .fa40 {
+            display: none;
+        }
+        .lx2 .fa33 .fa35 {
+            padding-top: 170px;
+        }
+        .lx2 .fa25 .fa26 .fa27 .fa28 p {
+            &:nth-child(n) {
+                font-size: 16px;
+            }
+            &:nth-child(2n) {
+                font-size: 81px;
+            }
+        }
+        .lx2 .fa25 .fa26 .fa27 {
+            padding-top: 160px;
+            .fa29 p {
+                &:nth-child(1) {
+                    font-size: 19px;
+                }
+                &:nth-child(4) {
+                    font-size: 21px;
+                }
+            }
+        }
+        .lx2 .fa17 .fa23 {
+            padding: 0;
+            p:nth-child(1) {
+                font-size: 14px;
+            }
+        }
+        .lx2 .fa17 .fa22 {
+            height: 80px;
+        }
+        .lx2 .fa17 .fa20,
+        .lx2 .fa17 .fa21 {
+            height: 220px;
+        }
+        .lx2 .fa2 .fa11 p,
+        .lx2 .fa17 .fa19 p {
+            font-size: 28px;
+        }
+        .lx2 .fa1 .fa3 .fa6 {
+            width: 140%;
+        }
+        .lx2 .fa1 .fa3 .fa9 {
+            padding-top: 0;
+        }
+        .lx2 .fa2 .fa11 {
+            margin-bottom: 20px;
+        }
+        .lx2 .fa2 .fa16 {
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+    }
+}
+
+//css lg 
+@media (max-width:1199px) and (min-width:992px) {
+    body {
+        .lx2 .fa17 .fa19 {
+            margin-bottom: 30px;
+        }
+        .lx2 .fa17 .fa19 p {
+            font-size: 30px;
+        }
+        .lx2 .fa2 .fa11 {
+            margin-bottom: 5px;
+            p {
+                font-size: 30px;
+            }
+        }
+        .lx2 .fa25 .fa26 .fa27 {
+            padding-top: 176px;
+        }
+        .lx2 .fa17 .fa23 {
+            padding-top: 12px;
+        }
+        .lx2 .fa17 .fa22 {
+            height: 100px;
+        }
+        .lx2 .fa17 .fa20,
+        .lx2 .fa17 .fa21 {
+            height: 280px;
+        }
+        .lx2 .fa1 .fa3 .fa6 {
+            width: 140%;
+        }
+        .lx2 .fa2 .fa16 {
+            &:nth-child(4) {
+                display: block;
+            }
+        }
+    }
+}
+
+//css xl
+@media (min-width:1200px) {
+    .lx2 .fa2 .fa16 {
+        &:nth-child(4) {
+            display: block;
+        }
+    }
+}
+
 .menux {
     position: fixed;
     width: 100%;
@@ -102,6 +247,9 @@
             }
             .fa7 {
                 margin-left: -22px;
+                img {
+                    width: 100%;
+                }
             }
             .fa8 {
                 width: 100%;
@@ -152,7 +300,7 @@
         }
         .fa11 {
             padding-top: 120px;
-            margin-bottom: 35px;
+            margin-bottom: 50px;
             p {
                 color: @den;
                 .fontab(34px);
@@ -185,9 +333,9 @@
         .fa13 {
             height: 260px;
             width: 100%;
+            overflow: hidden;
             img {
-                height: 100%;
-                overflow: hidden;
+                min-width: 100%;
             }
         }
         .fa14 {
@@ -208,12 +356,9 @@
                 }
             }
         }
-        .fa15 {
-            width: 100%;
-            display: inline-table;
-        }
         .fa16 {
             float: left;
+            overflow: hidden;
         }
     } // Start body three
     .fa17 {
@@ -229,7 +374,7 @@
         }
         .fa19 {
             padding-top: 130px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             p {
                 color: @trang;
                 .fontab(34px);
@@ -393,7 +538,7 @@
             width: 100%;
         }
         .fa35 {
-            padding-top: 160px;
+            padding-top: 190px;
             img {
                 width: 100%;
             }
@@ -434,6 +579,7 @@
             }
         }
         .fa38 {
+            padding-left: 95px;
             ul {
                 position: relative;
                 li {
