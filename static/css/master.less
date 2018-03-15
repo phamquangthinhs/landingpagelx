@@ -30,7 +30,24 @@
     font-size: @px;
 }
 
-//css mobile
+.logox1 {
+    display: inline;
+}
+
+.logox2 {
+    display: none;
+}
+
+.haxclick {
+    .logox1 {
+        display: none;
+    }
+    .logox2 {
+        display: inline;
+        padding-left: 10px;
+    }
+
+} //css mobile
 @media (max-width:575px) and (min-width:480px) {}
 
 //css sm
@@ -63,9 +80,7 @@
             padding: 20px 0 0;
         }
     }
-}
-
-//css md
+} //css md
 @media (max-width:991px) and (min-width:768px) {
     body {
         .fa40 {
@@ -125,9 +140,7 @@
             }
         }
     }
-}
-
-//css lg 
+} //css lg 
 @media (max-width:1199px) and (min-width:992px) {
     body {
         .lx2 .fa17 .fa19 {
@@ -164,9 +177,7 @@
             }
         }
     }
-}
-
-//css xl
+} //css xl
 @media (min-width:1200px) {
     .lx2 .fa2 .fa16 {
         &:nth-child(4) {
@@ -187,7 +198,7 @@
     .fa1 {
         img {
             width: 85%;
-            padding: 16px 0 0px;
+            padding: 16px 0 10px;
         }
     }
     .fa2 {
@@ -216,12 +227,10 @@
     background-color: @vang;
     height: 3px;
     width: 100%;
-}
-
-// Start body one
+} // Start body one
 .lx2 {
     .fa1 {
-        background: url(../img/bg.jpg);
+        background: url(../img/bg0.jpg);
         background-attachment: fixed;
         height: 100%;
         background-size: cover;
@@ -244,11 +253,14 @@
             }
             .fa6 {
                 padding: 35px 0 40px;
+                margin-left: -190px;
             }
             .fa7 {
                 margin-left: -22px;
+                padding-top: 67px;
                 img {
                     width: 100%;
+                    margin-left: -190px;
                 }
             }
             .fa8 {

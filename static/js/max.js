@@ -26,6 +26,7 @@ $(document).ready(function() {
         cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
         $(this).find("#menu-button").on('click', function(){
           $(this).toggleClass('menu-opened');
+        $("#mainlogo").toggleClass('haxclick')
           var mainmenu = $(this).next('ul');
           if (mainmenu.hasClass('open')) { 
             mainmenu.hide().removeClass('open');
